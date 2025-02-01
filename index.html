@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" href="./icons/raffneptune.jpg" type="image/x-icon" />
+    <title>Raff | Clock</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="clock-wrapper">
+        <div class="clock">
+          <div class="hand hour-hand"></div>
+          <div class="hand minute-hand"></div>
+          <div class="hand second-hand"></div>
+          <div class="center"></div>
+          <div class="numbers"></div>
+          <div class="lines"></div>
+          <div class="am-pm">
+            <div class="am active">AM</div>
+            <div class="pm">PM</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="alarms"></div>
+      <div id="add-alarm-btn">
+        <span>+</span>
+      </div>
+      <div class="modal" id="add-alarm-modal">
+        <div class="content">
+          <div class="head">
+            <div class="title">Add Alarm</div>
+            <div class="close">x</div>
+          </div>
+          <div class="body">
+            <div class="name">
+              <input type="text" id="name" value="alarm" />
+            </div>
+            <div class="time">
+              <div class="hour">
+                <div class="up">+</div>
+                <div class="number">12</div>
+                <div class="down">-</div>
+              </div>
+              <div class="minute">
+                <div class="up">+</div>
+                <div class="number">00</div>
+                <div class="down">-</div>
+              </div>
+            </div>
+            <div class="days">
+              <div class="day active">M</div>
+              <div class="day active">T</div>
+              <div class="day active">W</div>
+              <div class="day active">T</div>
+              <div class="day active">F</div>
+              <div class="day">S</div>
+              <div class="day">S</div>
+            </div>
+          </div>
+          <div class="footer">
+            <div class="btn cancel">Cancel</div>
+            <div class="btn save">Save</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
